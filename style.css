@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 500px;
+    width: 280px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: slategray;
+    overflow: hidden;
+}
+
+form .screen {
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 14px;
+    text-align: right;
+    pointer-events: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    /* align-items: center; */
+}
+
+button {
+    flex: 0 0 22%;
+    height: 56px;
+    width: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-empty {
+    border: none;
+    background-color: slategray;
+}
+
+.button-red {
+    background-color: rgb(183, 1, 1);
+    color: white;
+}
+
+.button-blue {
+    background-color: rgb(76, 76, 236);
+    color: white;
+}
+
+.button-yellow {
+    background-color: rgb(223, 150, 13);
+    color: white;
+}
+
+.button-green {
+    background-color: rgb(13, 120, 13);
+    color: white;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
